@@ -5,13 +5,13 @@
   <%= @word.word %>
 </p>
 
-<%= button_to 'Search', word_searches_path(@word) %>
+<%= button_to 'Search', word_results_path(@word) %>
 
 <table>
-  <% @word.searches.each do |search| %>
+  <% @word.results.each do |result| %>
     <tr>
-      <td><%= search.result %></td>
-      <td><%= search.created_at.getlocal %></td>
+      <td><%= result.result %></td>
+      <td><%= result.created_at.getlocal %></td>
     </tr>
   <% end %>
 </table>

@@ -10,7 +10,7 @@ Word.delete_all
 
 words = Word.create([{ word: 'penguin'}, { word: 'baseball'}])
 
-Search.create(word: words.last, result: "take me out to the ball game")
-Search.create(word: words.last, result: "take me out to the ball game")
-Search.create(word: words.last, result: "take me out to the ball game")
-Search.create(word: words.last, result: "Gee! it's a wonderful game")
+Result.create(word: words.last, result: "take me out to the ball game")
+Result.create(word: words.last, result: "take me out to the ball game")
+Result.create(word: words.last, result: "take me out to the ball game")
+Result.create(word: words.last, result: "Gee! it's a wonderful game")

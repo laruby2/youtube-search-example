@@ -1,12 +1,13 @@
 class Word < ApplicationRecord
-  has_many :searches, dependent: :destroy
+  has_many :results, dependent: :destroy
 
   def search_and_save_results
     search = YouTube::Search.new(word)
     search.first_page!
-    searches.delete_all
+    results.delete_all
+    require 'pry'; binding.pry
     search.get_search_items.each do |item|
-      searches.create(result: item.title)
+      results.create(result: item.title)
     end
   end
 end
