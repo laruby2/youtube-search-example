@@ -5,7 +5,7 @@
   <%= @word.word %>
 </p>
 
-<%= button_to 'Search', word_results_path(@word) %>
+<%= button_to 'Search', search_word_path(@word) %>
 
 <table>
   <% @word.results.each do |result| %>
