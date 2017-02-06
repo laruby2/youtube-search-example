@@ -1,24 +1,16 @@
-# README
+# youtube-search-example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+this is a demo app for [youtube-search](https://github.com/LARailsLearners/youtube-search). It makes a simple API call to youtube, and saves search result to database. A user can keep search words and check daily search result on the pages. Each word has its own show page, and it has 5 search results. Currently by Heroku scheduler it runs a rake task and takes snapshot of search once a day. And (even though we are not sure to keep this feature in the future) it still has a button  on the page to run a search. There are features to build and nothing much has been decided. We became to start this project because we need a Rails app to use the gem for developing `youtube-search` gem.
 
-Things you may want to cover:
+### How to run
 
-* Ruby version
+```
+git clone
+cd
+bundle install
+rails s
+```
 
-* System dependencies
+### How to contribute
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Feel free to open pull requests or issues, and participate the discussion. This is being developed as a group project of [LARailsLearners](https://github.com/larailslearners), LA Eastside Ruby Rails Study Group.
