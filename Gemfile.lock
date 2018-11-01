@@ -203,7 +203,7 @@ DEPENDENCIES
   youtube-search!
 
 RUBY VERSION
-   ruby 2.3.8p459
+   ruby 2.4.5p335
 
 BUNDLED WITH
-   1.16.2
+   1.17.1
