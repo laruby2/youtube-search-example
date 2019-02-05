@@ -2,8 +2,12 @@
 
 one:
   result: MyText
+  link: link
+  thumbnail: thumbnail
   word: one
 
 two:
   result: MyText
+  link: link
+  thumbnail: thumbnail
   word: two
