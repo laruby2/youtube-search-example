@@ -13,7 +13,7 @@
       <% if result.thumbnail && result.link %>
         <td><%= link_to image_tag(result.thumbnail, width: '120', height: '90', alt: 'thumbnail'), result.link, target: "_blank", rel: "nofollow" %></td>
       <% end %>
-      <td><%= result.result %></td>
+      <td><%= sanitize result.result %></td>
       <td><%= result.created_at.getlocal %></td>
     </tr>
   <% end %>
