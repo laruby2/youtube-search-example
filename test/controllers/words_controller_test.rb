@@ -45,4 +45,12 @@ class WordsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to words_url
   end
+
+  test "should search word" do
+    assert_equal 1, @word.results.count
+    post search_word_url(@word)
+
+    assert_equal 5, @word.results.count
+    assert_redirected_to word_url(@word)
+  end
 end
