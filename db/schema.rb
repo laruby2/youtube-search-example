@@ -10,20 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190205224308) do
+ActiveRecord::Schema.define(version: 2019_02_05_224308) do
 
   create_table "results", force: :cascade do |t|
-    t.text     "result"
-    t.integer  "word_id"
+    t.text "result"
+    t.integer "word_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "link"
-    t.string   "thumbnail"
+    t.string "link"
+    t.string "thumbnail"
     t.index ["word_id"], name: "index_results_on_word_id"
   end
 
   create_table "words", force: :cascade do |t|
-    t.string   "word"
+    t.string "word"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

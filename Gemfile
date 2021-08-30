@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.5.8'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0', ">= 5.2.4.3"
+gem 'rails', '~> 5.2.0', ">= 5.2.4.6"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4.0', group: :development
 # Use Puma as the app server
