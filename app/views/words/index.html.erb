@@ -16,7 +16,7 @@
         <td><%= word.word %></td>
         <td><%= link_to 'Show', word %></td>
         <td><%= link_to 'Edit', edit_word_path(word) %></td>
-        <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Destroy', word, method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
