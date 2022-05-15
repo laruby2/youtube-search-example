@@ -1,5 +1,10 @@
 class WordsController < ApplicationController
-  before_action :set_word, only: [:show, :edit, :update, :destroy]
+  before_action :set_word, only: [:show, :edit, :update, :destroy, :search]
+
+  def search
+    @word.search_and_save_results
+    redirect_to word_path(@word)
+  end
 
   # GET /words
   # GET /words.json
